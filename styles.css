@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: grey;
+    padding: 10px;
+    aspect-ratio: 2 / 3;
+}
+
+.calc-results {
+    background-color: white;
+    padding: 0 7%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calc-buttons > button {
+    flex: 0 1 25%;
+    aspect-ratio: 1;
+}
+
+button.zero { flex-grow: 1; aspect-ratio: auto; }
