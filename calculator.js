@@ -8,12 +8,12 @@ function handleNumClick(event) {
 }
 
 function handleOperatorClick(event) {
+    event.target.backgroundColor = '#a2dfa4'
     if(!typing) {
         sum.operator = event.target.textContent;
         return;
     } else if(!sum.left) {
         sum.left = parseFloat(input.textContent);
-        input.textContent = '0';
     } else {
         sum.right = parseFloat(input.textContent);
         sum.left = sum.calc();

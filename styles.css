@@ -13,33 +13,52 @@ body {
     align-items: center;
 }
 
+.calc-container {
+    width: 500px;
+    margin: 10px;
+}
+
 .calc {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background-color: grey;
-    padding: 10px;
-    aspect-ratio: 2 / 3;
+    padding: 5%;
 }
 
 .calc-results {
     background-color: white;
-    padding: 0 7%;
-    height: 15%;
+    padding: 7%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 5%;
 }
 
 .calc-buttons {
     display: flex;
     flex-wrap: wrap;
+    margin: -2% 0 0 -2%;
 }
 
 .calc-buttons > button {
-    flex: 0 1 25%;
+    flex: 0 1 23%;
     aspect-ratio: 1;
+    margin: 2% 0 0 2%;
+    border: none;
 }
+
+.calc-buttons > button,
+.calc-results,
+.calc {
+    border-radius: 5px;
+}
+
+.operator {
+    background-color: #c1ddd3;
+}
+
+.sign, .percent, .clear, .decimal {
+    background-color: #d7d7f9;
+} 
 
 button.zero { flex-grow: 1; aspect-ratio: auto; }
